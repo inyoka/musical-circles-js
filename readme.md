@@ -31,7 +31,7 @@ And repeat
 ```
 Howler
 1. Click the link above, download & extract.
-2. Copy the folder named 'A' into your project.
+2. Copy the folder named 'A' containing sound files into your project (or select another folder and edit the code accordingly).
 ```
 
 End with an example of getting some data out of the system or using it for a little demo
