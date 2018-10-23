@@ -18,23 +18,22 @@ Firstly clone the HTML and CSS ...
 git clone https://github.com/inyoka/musical-circles.js.git
 ```
 
-Say what the step will be
+Firstly ...
 
+#### Paper.js
 ```
-Paper
 1. Click the link above, download & extract.
 2. Copy the whole folder into your project.
 ```
 
-And repeat
+... then ...
 
+#### Howler.js
 ```
-Howler
 1. Click the link above, download & extract.
-2. Copy the folder named 'A' containing sound files into your project (or select another folder and edit the code accordingly).
+2. Copy the folder named 'A' containing sound files into your project
+(or select another folder and edit the code accordingly).
 ```
-
-End with an example of getting some data out of the system or using it for a little demo
 
 ## Acknowledgments
 
