@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Circles</title>
+    <script type="text/javascript" src="paperjs-v0.11.8/dist/paper-full.js"></script>
+    <link rel="stylesheet" href="circles.css">
+
+
+    <script type="text/paperscript" canvas="myCanvas">
+
+      var circles = [];
+
+      function onKeyDown(event) {
+        var maxPoint = new Point(view.size.width, view.size.height);
+        var randomPoint = Point.random();
+        var point = maxPoint * randomPoint;
+        var newCircle = new Path.Circle(point, 100)
+        newCircle.fillColor = "orange";
+        circles.push(newCircle);
+      }
+
+      function onFrame(event){
+        for (var i = 0; i < circles.length; i++){
+          circles[i].fillColor.hue +=1;
+          circles[i].scale(.9);
+        }
+        animatedCircle.fillColor.hue += 1;
+      }
+
+    </script>
+
+
+
+    <!-- <script type="text/paperscript" canvas="myCanvas">
+      for(var y = 100; y < 1000; y+=100){
+        for(var x = 100; x < 1000; x+=100){
+          a = 255 / 1000; r = x*a; g = y*a; b = 127; d=30;
+
+          new Path.Circle(new Point(x, y), d).fillColor = "rgb("+r+", "+g+", "+b+")";
+        }
+      }
+    </script> -->
+
+
+    <!-- <script type="text/paperscript" canvas="myCanvas">
+      for(var y = 100; y < 1000; y+=100){
+        for(var x = 100; x < 1000; x+=100){
+          var myCircle = new Path.Circle(new Point(x, y), 60);
+          Red = 255/4;
+          Green = 255 - x/4;
+          Blue = 255 - y/4;
+          myCircle.fillColor = "rgb(" + Red + ", " + Green + ", " + Blue +")";
+        }
+      }
+    </script> -->
+
+  </head>
+  <body>
+    <canvas id="myCanvas" width="300" height="300"></canvas>
+  </body>
+</html>
