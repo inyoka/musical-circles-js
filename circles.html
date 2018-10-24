@@ -9,6 +9,8 @@
 
   <script type="text/paperscript" canvas="myCanvas">
 
+  // Object containing the color and sound for each letter on keyboard.
+
   var keyData = {
     a: { color: '#f1c40f', sound: new Howl({ src: ['sounds/pinwheel.mp3']})},
     b: { color: '#2980b9', sound: new Howl({ src: ['sounds/wipe.mp3']})},
@@ -42,6 +44,7 @@
   var circleSize = 500;
 
   function onKeyDown(event) {
+    // What happens when a key defined in keyData is pressed ...
     if(keyData[event.key]){
       var maxScreenSize = new Point(view.size.width, view.size.height);
       var pointOnScreen = maxScreenSize * Point.random();
@@ -54,6 +57,7 @@
   }
 
   function onFrame(event){
+    // Prevent array from growing in size.
     for(var i = 0; i < circles.length; i++){
       circles[i].scale(0.9);
       circles[i].fillColor.hue += 1;
@@ -64,11 +68,11 @@
       }
     }
   }
-
   </script>
 
 </head>
 <body>
+  <!-- Calls the canvas which is drawn in Javascript -->
   <canvas id="myCanvas" width="300" height="300"></canvas>
 </body>
 </html>
