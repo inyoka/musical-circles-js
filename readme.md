@@ -17,7 +17,7 @@ This project uses [Paper.js](https://http://paperjs.org/) and [Howler.js](https:
 1. Clone the project.
 ```
   git clone https://github.com/inyoka/musical-circles.js.git
-  cd musical-circles.js
+  cd musical-circles-js
 ```
 2. Change into the project directory.
 3. [Install Python 3.](https://www.python.org/downloads/)
