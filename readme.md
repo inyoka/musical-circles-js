@@ -8,33 +8,25 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-You need [Paper.js](https://http://paperjs.org/) and [Howler.js](https://howlerjs.com/).
+This project will create errors if not run from a web server.  Therefore we recommend spinning up a temporary python webserver (see installing). These instructions assume basic command line knowledge.
+
+This project uses [Paper.js](https://http://paperjs.org/) and [Howler.js](https://howlerjs.com/), however the files are already included in the repository.
 
 ### Installing
 
-Firstly clone the HTML and CSS ...
-
+1. Clone the project.
 ```
-git clone https://github.com/inyoka/musical-circles.js.git
+  git clone https://github.com/inyoka/musical-circles.js.git
+  cd musical-circles.js
 ```
-
-Firstly ...
-
-#### Paper.js
+2. Change into the project directory.
+3. [Install Python 3.](https://www.python.org/downloads/)
+4. Then from within the project directory run :
 ```
-1. Click the link above, download & extract.
-2. Copy the whole folder into your project.
+python -m http.server
 ```
-
-... then ...
-
-#### Howler.js
-```
-1. Click the link above, download & extract.
-2. Copy the folder named 'A' into your project.
-(or select another folder and edit the code accordingly).
-3) Rename the folder 'A' to 'sounds'.
-```
+5. Open your browser and navigate to :
+[http://127.0.0.1:8000/circles.html](http://127.0.0.1:8000/circles.html)
 
 ## Acknowledgments
 
